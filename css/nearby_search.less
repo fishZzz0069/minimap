@@ -14,13 +14,12 @@ width: 100%;
 }
 
 #place-info-wrapper {
-display: none;
-	 background-color: #F00;
+background-color: #F00;
 position: absolute;
 top: 0;
-left: 0;
+left: -408px;
 &.visible {
-display: block;
+left:0;
 }
 
 #hero-header-wrapper{
@@ -65,11 +64,10 @@ height:16px;
 }
 }
 .place-info-visibility-toggle {
-content: "<";
 width: 23px;
 height: 48px;
 position: absolute;
-right: -24px;
+right: -23px;
        line-height: 48px;
        text-align: center;
        background-color: rgba(255,255,255,0.9);
@@ -78,6 +76,18 @@ right: -24px;
 top: 8px;
 border:none;
 outline:none;
+    .triangle-icon {
+         width: 0; 
+         height: 0;
+border-top: 7px solid transparent;
+border-bottom: 7px solid transparent; 
+border-left: 7px solid rgba(0, 0, 0, 0.7);
+
+ &.left {
+border-left: 0;
+border-right:7px solid rgba(0, 0, 0, 0.7); 
+}
+}
 }
 
 
